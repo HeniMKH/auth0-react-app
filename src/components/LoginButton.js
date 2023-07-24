@@ -3,9 +3,10 @@ import React from 'react'
 
 const LoginButton = () => {
     const { loginWithRedirect, isAuthenticated } = useAuth0();
+    
   return (
     !isAuthenticated && (
-        <button onClick={()=> loginWithRedirect}>
+        <button onClick={()=> loginWithRedirect()}>
             sign In
 
         </button>
